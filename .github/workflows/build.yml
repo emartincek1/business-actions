@@ -7,15 +7,15 @@ on:
 
 jobs:
 
-test:
-    name: Test
-    runs-on: ubuntu-latest
+  test:
+      name: Test
+      runs-on: ubuntu-latest
 
-    steps:
+      steps:
 
-    - uses: actions/checkout@v3
-    - uses: actions/setup-node@v3
-    with:
-        node-version: 16.x
-    - run: npm ci
-    - run: npm test
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+      with:
+          node-version: 16.x
+      - run: npm ci
+      - run: npm test
